@@ -1,0 +1,72 @@
+.main{
+    text-align: center;
+    margin-top: 70px;
+}
+.gphysician{
+    display: flex; /* Use flexbox to arrange children */
+     /* Space elements evenly */
+    padding: 20px;
+    background-color:whitesmoke;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;  
+    border-radius: 20px;
+    margin-left: 24px;
+    width: 105%;
+}
+.gphysician:hover{
+    background-color: bisque;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Change box shadow on hover */
+    transform: scale(1..5); /* Increase size on hover */
+}
+.gynae{
+    display: flex; /* Use flexbox to arrange children */
+     /* Space elements evenly */
+    padding: 20px;
+    background-color:whitesmoke;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;  
+    border-radius: 20px;
+    margin-left: 30px;
+    width: 105%;
+}
+.gynae:hover{
+    background-color: bisque;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Change box shadow on hover */
+    transform: scale(1..5); /* Increase size on hover */
+}
+.dermatology{
+    display: flex; /* Use flexbox to arrange children */
+     /* Space elements evenly */
+    padding: 20px;
+    background-color:whitesmoke;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;  
+    border-radius: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 105%;
+}
+.dermatology:hover{
+    background-color: bisque;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Change box shadow on hover */
+    transform: scale(1..5); /* Increase size on hover */
+}
+.gppic{
+    display: inline;
+}
+.subcontainer{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-evenly;
+    margin-right: px;
+}
+.gpmaintext{
+    margin-top: 5px;
+}
+.linkgp{
+    text-decoration: none;
+    color:black
+}
