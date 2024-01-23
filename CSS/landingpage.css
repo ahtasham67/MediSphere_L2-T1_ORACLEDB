@@ -1,0 +1,57 @@
+.navvar{
+    margin-top: 17px;
+    margin-left: 10px;
+    display: flex;
+    
+    
+}
+.logosection{
+    display: flex;
+    
+}
+.namesection{
+    margin-left: 18px;
+}
+.logowords{
+    font-weight: 700;
+    font-size: px;
+}
+.logounder{
+    font-weight: .1px;
+    color: burlywood;
+}
+.othercontainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+   display: flex;
+   margin-top: 70px;
+  justify-content: space-evenly;
+ }
+ .gphysician{
+padding: 20px;
+background-color:whitesmoke;
+border: 1px solid #ddd;
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+box-sizing: border-box;  
+border-radius: 20px;
+margin-left: 24px;
+}
+.gphysician:hover{
+background-color: bisque;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Change box shadow on hover */
+transform: scale(1.05); /* Increase size on hover */
+}
+.linkgp{
+text-decoration: none;
+color: black;
+
+}
+.consultation{
+width: 200px;
+height: 200px;
+background-color: #3498db;
+box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}

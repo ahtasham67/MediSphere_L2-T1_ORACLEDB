@@ -1,5 +1,8 @@
 const landingcontroller = (req,res,next) => {
-    res.render('landingpage');
+    console.log(req.session.user)
+    res.render('landingpage',{
+        user:req.session.user
+    });
 }
 
 module.exports = landingcontroller;

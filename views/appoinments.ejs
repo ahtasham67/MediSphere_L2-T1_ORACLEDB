@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appoinments</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background:skyblue;
+            display: flex;
+            justify-content: space-evenly;
+            z-index: 99;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            color: aliceblue;
+            user-select: none;
+        }
+
+        .navigation a{
+            position: relative;
+            font-size: 1.3em;
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 150px;
+        }
+        .navigation a::after{
+            content: ' ';
+            position:absolute;
+            width: 100%;
+            height: 3px;
+            background: blue;
+            border-radius: 5px;
+            left:0px;
+            bottom: -6px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }
+        .navigation a:hover::after{
+            transform: scaleX(1);
+        }
+        .navigation .button-login{
+            width: 130px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid aliceblue;
+            outline: none;
+            border-radius: 26px;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: blue;
+            font-weight: 500;
+            margin-left: 100px;
+            transition: .5s;
+            background-color: azure;
+        }
+        .navigation .button-login:hover{
+            background: blue;
+            color: whitesmoke;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('../../public/home.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .timesection{
+            margin-top: 10px;
+        }
+        .doctorsname{
+    padding: 10px;
+    background-color:whitesmoke;
+    border: 1px solid #ddd;
+    width: 1480px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;  
+    border-radius: 20px;
+    margin-left: 24px;
+    padding: 20px;
+
+}
+.datesection{
+    padding: 10px;
+    background-color:whitesmoke;
+    border: 1px solid #ddd;
+    width: 500px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;  
+    border-radius: 20px;
+    margin-left: 24px;
+    margin-top: 15px; 
+    margin-right: 15px;
+}
+.timesection{
+    padding: 30px;
+    background-color:whitesmoke;
+    border: 1px solid #ddd;
+    width: 1350px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;  
+    border-radius: 20px;
+    margin-left: 24px;
+    margin-top: 15px; 
+    margin-right: 15px;
+}
+.button-login{
+    width: 180px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid black;
+            cursor: pointer;
+            font-size: 1.3em;
+            color: black;
+            font-weight: 500;
+            margin-left: 10px;
+            transition: .5s;
+            background-color: whitesmoke;
+            border-radius: 9px;
+}
+.button-login:hover{
+    background: white;
+            color: black;
+}
+.confirmm{
+    height: 50px;
+            background: transparent;
+            border: 2px solid aliceblue;
+            cursor: pointer;
+            font-size: 1.3em;
+            color: grey;
+            border-radius: 9px;
+            font-weight: 500;
+            margin-left: 10px;
+            transition: .5s;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: 250px;
+            background-color: skyblue;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../../public/logo.jpg" width="70px" style="margin-right: 10px; border-radius: 9px;">
+         <h2 class="logo">Medi<span style="color: blue;">Sphere</span></h2>
+         <nav class="navigation">
+             <a href="/consultation">Consultation</a>
+             <a href="/diagonstics">Diagonstics</a>
+             <a href="/doctors">Doctors</a>
+             <button class="button-login">login</button>
+         </nav>
+     </header>
+
+     <div class="wrapper" style="margin-top: 160px;">
+
+        <div class="doctorsname" style="display: flex; align-items: center;">
+           <p>Availabel time slots  of</p>
+           <img src="https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/139323/profile_photos/MaVZqDcxCbOi5s0S5GuN1IrdfvG28NjaoI8Qx0Gu.jpg" alt = "doctors image" width="50px" style="margin-left: 70px;">
+           <div class="nameandspe" style="margin-left: 20px;">
+            <h3>Name</h1>
+            <p><span style="color: blue;">Speciality</span></p>
+           </div>
+        </div>
+        <div class="dateandtime" style="display: flex;">
+            <div class="datesection" style="width: 90px;">
+
+            </div>
+            <div class="timeandconfirmwrapper">
+
+                <div class="timesection">
+                    <h2> Select Your Appoinment Time</h2><br>
+
+                  <button class="button-login" id = 'time'>time</button>
+                </div>
+                <div class="confirm" style="margin-top: 20px; margin-left: 1100px;">
+                    <button class="confirmm" id = 'confirm'>Confirm</button>
+                 </div>
+            </div>
+
+        </div>
+
+     </div>
+
+    <script>
+             const time = document.getElementById('time');
+             time.addEventListener('click',() =>{
+                    time.style.background = 'blue';
+                    time.style.color = 'white';
+                     const confirm = document.getElementById('confirm');
+                     confirm.style.background = 'blue';
+                     confirm.style.color = 'white'
+
+             })
+    </script>
+</body>
+</html>

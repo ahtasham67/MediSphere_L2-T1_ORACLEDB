@@ -1,5 +1,5 @@
-const landingcontroller = (req,res,next) => {
+const consultation = (req,res,next) => {
     res.render('rename');
 }
 
-module.exports = landingcontroller;
+module.exports = consultation;
