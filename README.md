@@ -3,5 +3,5 @@
 MEDISPHERE
 A COMPLETE HEALTHCARE SOLUTION
 
-Drive Link for better Demonstartion
+Drive Link for better Demonstration
 https://drive.google.com/file/d/1MkpLkjxcCU6kxPLmPiA1bPef0tRtM-su/view?usp=drive_link
